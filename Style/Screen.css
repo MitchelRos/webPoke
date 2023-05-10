@@ -1,0 +1,76 @@
+@font-face {
+     font-family: pokefont;
+     src: url('/PokemonGb-RAeo.ttf');
+}
+
+.secciones {
+     background-image: linear-gradient(10deg, rgba(214, 255, 240, 0.203));
+     border-radius: 0% 0% 10% 10%;
+     display: none;
+     transition: ease-in-out 5s;
+}
+
+#screen {
+     margin: 10px auto;
+     z-index: 3;
+     width: 100%;
+     text-align: center;
+}
+
+#form {
+     border-radius: 0% 0% 200px 200px;
+     background-color: rgb(149, 249, 181);
+     border: rgba(0, 0, 0, 0.8) solid 2px;
+}
+
+#form>span {
+     border-radius: 0% 0% 200px 200px;
+     height: 50px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+}
+
+input {
+     background-color: transparent;
+     border: none;
+     font-size: 30px !important;
+     text-align: center;
+     font-weight: bolder;
+}
+
+#pokeinput {
+     width: 100%;
+     padding: 5px 0px;
+     border-radius: 0% 0% 200px 200px;
+     z-index: 9;
+}
+
+#search {
+     display: none;
+     width: 80px;
+     height: 50px;
+     border-radius: 50px 0% 0% 5%;
+     background-color: rgb(61, 232, 212);
+     border-left: black dotted 3px;
+     background-position: center;
+     font-size: 30px !important;
+     margin-left: -80px;
+     z-index: 10;
+}
+#search:hover {
+     display: inline-block;
+
+}
+#pokeinput:hover+#search {
+     display: inline-block;
+}
+
+h3 {
+     font-weight: bolder;
+     background-color: rgb(149, 249, 181);
+     border-radius: 0% 0% 200px 200px;
+     border: rgba(0, 0, 0, 0.8) solid 2px;
+}
